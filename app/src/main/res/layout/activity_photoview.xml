@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    >
+    <com.clw.ui.adapter.like.PhotoViewPager
+        android:id="@+id/mPhotoViewPager"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/mCrossIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cross" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/mImgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:text="18/18"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/mSaveBtn"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="设置为主题背景"
+        android:background="@color/colorTuoM"
+        android:textColor="@color/colorWhite"
+        />
+
+</RelativeLayout>

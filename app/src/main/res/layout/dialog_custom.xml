@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/linear_layout_bg"
+    android:minWidth="280dp"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/mTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:textColor="@color/colorYaHei"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/mContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorYaHei"
+            android:textStyle="bold"
+            android:text="这里面是你要输入的内容"
+            />
+        <LinearLayout
+           android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/positiveButton"
+                android:textColor="@color/colorWhite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_check_bg"
+                android:text="确定"
+                />
+            <Button
+                android:layout_marginStart="15dp"
+                android:id="@+id/negativeButton"
+                android:textColor="@color/colorWhite"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_check_bg"
+                android:text="取消"
+                />
+        </LinearLayout>
+
+
+</LinearLayout>

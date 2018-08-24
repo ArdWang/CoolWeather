@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    >
+        <LinearLayout
+            android:background="@drawable/linear_card_view_bg"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <com.clw.widgets.RoundRectImageView
+                android:id="@+id/mNewComicImg"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/mNewComicTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/mNewComicDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
