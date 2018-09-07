@@ -42,7 +42,7 @@ class LikeFragment :BaseMvpFragment<GankPresenter>(),GankView, BGARefreshLayout.
 
 
     private fun initView(){
-        mLikeRv.layoutManager = GridLayoutManager(context,2)
+        mLikeRv.layoutManager = GridLayoutManager(context!!,2)
         mAdapter = GankAdapter(context!!)
         mLikeRv.adapter = mAdapter
 

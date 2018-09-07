@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    >
+    <com.clw.ui.adapter.like.PhotoViewPager
+        android:id="@+id/mNewsViewPager"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/mNewsIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/cross" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/mNewsPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBDK"
+        android:textSize="16sp"
+        android:text="18/18"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/mNewsTle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBDK"
+            android:textSize="18sp"
+            android:text="11111"
+            />
+        <TextView
+            android:id="@+id/mNewsCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置为主题背景"
+            android:textColor="@color/colorBDK"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

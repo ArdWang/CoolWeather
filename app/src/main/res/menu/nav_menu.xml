@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-        <group android:checkableBehavior="single" android:id="@+id/g1">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <group>
             <item
-                android:id="@+id/nav_night"
+                android:id="@+id/nav_star"
                 android:icon="@drawable/nav_message"
-                android:title="夜间模式"
+                android:title="点赞"
                 />
         </group>
-        <group android:checkableBehavior="single" android:id="@+id/g2">
+        <group >
             <item
                 android:id="@+id/nav_space"
                 android:icon="@drawable/nav_space"
                 android:title="缓存清理"
                 />
         </group>
-        <group android:checkableBehavior="single" android:id="@+id/g3">
+        <group>
             <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/nav_feedback"
                 android:title="发送反馈"
                 />
         </group>
-        <group android:checkableBehavior="single" android:id="@+id/g4">
+
+    <item android:id="@+id/nav_settings"
+        android:title="@string/action_settings">
+        <menu>
+            <item
+                android:id="@+id/night_theme"
+                android:title="@string/night_theme"
+                android:icon="@mipmap/night"
+                app:actionLayout="@layout/switch_layout"/>
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/about"
+                android:icon="@mipmap/about"/>
             <item
                 android:id="@+id/nav_siginout"
                 android:icon="@drawable/nav_siginout"
                 android:title="退出"
                 />
-        </group>
+        </menu>
+    </item>
 
 </menu>

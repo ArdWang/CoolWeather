@@ -47,11 +47,18 @@ fun <T> Observable<T>.convert(): Observable<T> {
     return this.map(BaseFunction())
 }
 
-/*
+/**
     ImageView加载网络图片
  */
 fun ImageView.loadUrl(url: String) {
     GlideUtils.loadUrlImage(context, url, this)
+}
+
+/**
+    扩展视图可见性
+ */
+fun View.setVisible(visible:Boolean){
+    this.visibility = if (visible) View.VISIBLE else View.GONE
 }
 
 

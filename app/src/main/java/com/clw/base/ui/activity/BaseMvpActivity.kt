@@ -10,7 +10,7 @@ abstract class BaseMvpActivity<T:BasePresenter<*>>:BaseActivity(),BaseView {
 
     lateinit var mPresenter: T
 
-    lateinit var progressLoading: ProgressLoading
+    private lateinit var progressLoading: ProgressLoading
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

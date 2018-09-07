@@ -60,6 +60,8 @@ class RetrofitFactory private constructor(){
                     "weather" -> HttpUrl.parse(BaseConstant.APP_WEATHER_SERVICE_ADDRE)
                     "gank"-> HttpUrl.parse(BaseConstant.APP_GANK_SERVICE_ADDRE)
                     "comic"-> HttpUrl.parse(BaseConstant.APP_SERVICE_ADDRE)
+                    "news"-> HttpUrl.parse(BaseConstant.APP_NEWS_ADDRE)
+                    "latest" -> HttpUrl.parse(BaseConstant.APP_ZHIHUNEWS_ADDRE)
                     else -> oldUrl
                 }
 

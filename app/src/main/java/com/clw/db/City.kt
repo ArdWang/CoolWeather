@@ -1,8 +1,5 @@
 package com.clw.db
 
-
-
-
 class City{
     var id: Int = 0
     var cityName: String? = null

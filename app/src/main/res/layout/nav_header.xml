@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="10dp"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
     android:layout_height="250dp">
+    <ImageView
+        android:id="@+id/mNavHeaderImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorPrimary"
+        />
     <de.hdodenhof.circleimageview.CircleImageView
+        android:visibility="gone"
         android:id="@+id/mIconImage"
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -22,7 +28,7 @@
             android:id="@+id/mUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="我的天空"
+            android:text="酷酷天气"
             android:textColor="#fff"
             android:textSize="18sp"
             />
@@ -31,7 +37,7 @@
             android:id="@+id/mDepartName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="一点也没有什么意思啊"
+            android:text="v 1.0.0"
             android:textColor="#FFF"
             android:textSize="14sp"
             />

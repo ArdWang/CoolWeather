@@ -133,9 +133,4 @@ class DBSupport {
         db.close()
         return list
     }
-
-
-
-
-
 }

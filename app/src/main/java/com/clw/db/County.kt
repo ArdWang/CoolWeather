@@ -1,7 +1,5 @@
 package com.clw.db
 
-
-
 class County {
     var id: Int = 0
     var countyName: String? = null

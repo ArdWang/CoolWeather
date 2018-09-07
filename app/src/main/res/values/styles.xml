@@ -46,5 +46,47 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- TabLayout通用样式-->
+    <style name="TabsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabIndicatorColor">@color/colorWhite</item>
+        <item name="tabBackground">@drawable/tab_selector</item>
+        <item name="tabTextAppearance">@dimen/text_big_size</item>
+        <item name="tabTextColor">@color/colorBDK</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+    </style>
+
+    <!-- 订单中Tab样式-->
+    <style name="TabsStyle.News" parent="@style/TabsStyle">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabBackground">@drawable/border_bottom</item>
+        <item name="tabTextColor">@color/colorFont</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="news_item">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="image_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
 
 </resources>

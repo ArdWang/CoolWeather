@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_layout_bg"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/mNewsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="郑州东区白绿片区改善精品楼盘 走过路过不要错过"
+            />
+        <TextView
+            android:layout_gravity="end"
+            android:id="@+id/mNewsTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="2018/08/0 14:52:13"
+            />
+        <TextView
+            android:id="@+id/mNewsContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="文化在这里扎根,经济在这里跃升。近年来,郑州城市再向东走,主要产业集中在主城区以东的区域,其中白绿片区规划好,同时也受到郑东新区北龙湖区域价值外溢影响,未来发展一片光明。 一般情况下,楼盘的容积率越低,居住舒适度越高。而改善盘的容积率一般都不超过3,并且低容积率的..."
+            />
+        <LinearLayout
+            android:id="@+id/mMultiNewsView"
+            style="@style/MatchWrap.Horizontal"
+            android:background="@color/colorWhite"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

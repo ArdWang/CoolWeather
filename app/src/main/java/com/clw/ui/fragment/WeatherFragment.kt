@@ -31,7 +31,6 @@ import com.clw.ui.adapter.weather.CityDialogAdapter
 import com.clw.ui.adapter.weather.WeatherAdapter
 import com.clw.utils.AppSPrefsUtils
 import com.clw.widgets.CityDialog
-import com.gyf.barlibrary.ImmersionBar
 import kotlinx.android.synthetic.main.fragment_weather_new.*
 import java.util.ArrayList
 
@@ -421,7 +420,8 @@ class WeatherFragment: BaseMvpFragment<WeatherPresenter>(), WeatherView, SwipeRe
         },2000)
     }
 
-    override fun onDestroy() {
+
+    /*override fun onDestroy() {
         super.onDestroy()
 
     }
@@ -429,7 +429,7 @@ class WeatherFragment: BaseMvpFragment<WeatherPresenter>(), WeatherView, SwipeRe
     override fun onHiddenChanged(hidden: Boolean) {
         super.onHiddenChanged(hidden)
 
-    }
+    }*/
 
 
 }

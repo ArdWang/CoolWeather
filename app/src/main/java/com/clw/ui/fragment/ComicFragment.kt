@@ -21,7 +21,7 @@ import com.clw.ext.loadUrl
 import com.clw.ext.onClick
 import com.clw.presenter.ComicPresenter
 import com.clw.presenter.view.ComicView
-import com.clw.ui.activity.DemoActivity
+import com.clw.test.DemoActivity
 import com.clw.ui.adapter.comic.JapanComicAdapter
 import com.clw.ui.adapter.comic.NewComicAdapter
 import com.clw.ui.adapter.comic.RecommendAdapter

@@ -1,6 +1,14 @@
 <resources>
-    <string name="app_name">CoolWeather</string>
+    <string name="app_name">酷酷天气</string>
     <string name="bnb_discover">动漫</string>
     <string name="bnb_weather">天气</string>
     <string name="bnb_welfare">福利</string>
+    <string name="bnb_news">新闻</string>
+
+    <string name="action_settings">设置</string>
+    <string name="night_theme">夜间模式</string>
+    <string name="about">关于我们</string>
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
 </resources>

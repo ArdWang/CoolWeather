@@ -2,7 +2,6 @@ package com.clw.data.api
 
 import com.clw.data.protocol.comic.banner.BannerResp
 import com.clw.data.protocol.comic.daycomic.DayComicResp
-import com.clw.data.protocol.comic.japancomic.JapanComic
 import com.clw.data.protocol.comic.japancomic.JapanComicResp
 import com.clw.data.protocol.comic.newcomic.NewComicResp
 import com.clw.data.protocol.comic.recommend.RecommendResp
@@ -12,7 +11,6 @@ import retrofit2.http.GET
 import retrofit2.http.Headers
 
 interface ComicApi {
-
 
     /**
      * 获取动漫Banner的接口

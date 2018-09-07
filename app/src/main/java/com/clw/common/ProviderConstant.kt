@@ -17,5 +17,9 @@ class ProviderConstant {
         const val LEFT_SPACE = 2
         const val LEFT_BACK = 3
         const val LEFT_EXIT = 4
+
+        //夜间模式
+        const val DAY_THEME = "DAY_THEME"
+        const val NIGHT_THEME = "NIGHT_THEME"
     }
 }

@@ -21,5 +21,9 @@
     <color name="colorTuoM">#01000000</color>
     <color name="colorBTM">#e0000000</color>
 
+    <color name="colorFont">#666666</color>
+
+    <color name="colorNight">#999999</color>
+
     <color name="colorComic">#f5f5ee</color>
 </resources>

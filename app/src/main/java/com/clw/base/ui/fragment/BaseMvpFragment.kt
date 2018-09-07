@@ -14,7 +14,7 @@ abstract class BaseMvpFragment<T: BasePresenter<*>> :BaseFragment(), BaseView{
 
     lateinit var mPresenter: T
 
-    lateinit var progressLoading: ProgressLoading
+    private lateinit var progressLoading: ProgressLoading
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         init()

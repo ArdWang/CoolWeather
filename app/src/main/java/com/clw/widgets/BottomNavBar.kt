@@ -15,7 +15,7 @@ class BottomNavBar @JvmOverloads constructor(context:Context, attrs:AttributeSet
 
     init {
         //discover
-        val wifiItem = BottomNavigationItem(R.drawable.search_p,resources.getString(R.string.bnb_discover))
+        val wifiItem = BottomNavigationItem(R.drawable.search_p,resources.getString(R.string.bnb_news))
                 .setInactiveIconResource(R.drawable.search)
                 .setActiveColorResource(R.color.colorBlue)
                 .setInActiveColorResource(R.color.colorQBlue)
