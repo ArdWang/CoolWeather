@@ -25,7 +25,6 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorBDK"
         android:textSize="16sp"
-        android:text="18/18"
         android:layout_centerHorizontal="true"
         />
     <LinearLayout
@@ -41,13 +40,11 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorBDK"
             android:textSize="18sp"
-            android:text="11111"
             />
         <TextView
             android:id="@+id/mNewsCon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="设置为主题背景"
             android:textColor="@color/colorBDK"
             android:textSize="14sp"
             />

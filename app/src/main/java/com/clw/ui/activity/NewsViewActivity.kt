@@ -44,29 +44,29 @@ class NewsViewActivity :BaseActivity(){
 
     @SuppressLint("SetTextI18n")
     private fun initView(){
-        if(imgList!!.size>0&&imgList!=null){
-            mAdapter = ImageVpAdapter(imgList,this)
+        if(imgList!=null) {
+            mAdapter = ImageVpAdapter(imgList, this)
             mNewsViewPager!!.adapter = mAdapter
-            mNewsViewPager!!.setCurrentItem(pos,false)
-
-            mNewsPage.text = (pos+1).toString() + "/" + imgList!!.size
-
-            if(title!=null){
-                mNewsTle.text =title
-            }
-
-            if(content!=null){
-                mNewsCon.text = content
-            }
-
-            mNewsViewPager!!.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener(){
-                override fun onPageSelected(position: Int) {
-                    super.onPageSelected(position)
-                    pos = position
-                    mNewsPage.text = (pos+1).toString() + "/" + imgList!!.size
-                }
-            })
+            mNewsViewPager!!.setCurrentItem(pos, false)
+            mNewsPage.text = (pos + 1).toString() + "/" + imgList!!.size
         }
+
+        if (title != null) {
+            mNewsTle.text = title
+        }
+
+        if (content != null) {
+            mNewsCon.text = content
+        }
+
+        mNewsViewPager!!.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                pos = position
+                mNewsPage.text = (pos + 1).toString() + "/" + imgList!!.size
+            }
+        })
+
 
         mNewsIv.onClick {
             AppManager.instance.finishActivity(this)
