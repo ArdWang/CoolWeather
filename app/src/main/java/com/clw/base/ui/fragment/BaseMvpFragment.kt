@@ -29,7 +29,7 @@ abstract class BaseMvpFragment<T: BasePresenter<*>> :BaseFragment(), BaseView{
 
 
     override fun showLoading() {
-        progressLoading.showLoading()
+        progressLoading.showLoading(20,true)
     }
 
     override fun hideLoading() {

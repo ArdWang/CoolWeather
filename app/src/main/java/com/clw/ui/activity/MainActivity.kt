@@ -33,7 +33,7 @@ import org.jetbrains.anko.toast
 import android.content.Context
 import android.util.Log
 import android.widget.TextView
-import com.clw.common.MainApplication.Companion.context
+
 
 
 @Suppress("DEPRECATION", "SENSELESS_COMPARISON")
@@ -52,7 +52,7 @@ class MainActivity : BaseMvpActivity<GankPresenter>(), GankView{
     private val mLikeFragment by lazy { LikeFragment() }
 
     //新闻
-    private val mNewsFragemnt by lazy { NewsAllFragment() }
+    private val mNewsFragment by lazy { NewsAllFragment() }
 
     private var bgUrl:String=""
 
@@ -123,13 +123,13 @@ class MainActivity : BaseMvpActivity<GankPresenter>(), GankView{
     private fun initFragment() {
         val manager = supportFragmentManager.beginTransaction()
         //manager.add(R.id.mContaier,mDiscoverFragment)
-        manager.add(R.id.mContaier,mNewsFragemnt)
+        manager.add(R.id.mContaier,mNewsFragment)
         manager.add(R.id.mContaier,mWeatherFragment)
         manager.add(R.id.mContaier,mLikeFragment)
         manager.commit()
 
         //mStack.add(mDiscoverFragment)
-        mStack.add(mNewsFragemnt)
+        mStack.add(mNewsFragment)
         mStack.add(mWeatherFragment)
         mStack.add(mLikeFragment)
     }

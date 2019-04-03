@@ -46,6 +46,7 @@ class NewsLatestFragment :BaseMvpFragment<LatestPresenter>(),LatestView, SwipeRe
      * 初始化界面
      */
     private fun initView() {
+
         mSwipeLateLayout.setOnRefreshListener(this)
         mSwipeLateLayout.setColorSchemeResources(R.color.colorPrimary)
 

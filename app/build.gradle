@@ -49,20 +49,21 @@ dependencies {
     //Rxjava与RxAndroid
     api 'io.reactivex.rxjava2:rxkotlin:2.2.0'
     api 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
     // rxlifecycle2.0
     api 'com.trello.rxlifecycle2:rxlifecycle-kotlin:2.2.2'
     api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.2'
 
     //Retrofit2.0大集合
-    api "com.squareup.okhttp3:okhttp:${ok_http_version}"
-    api "com.squareup.retrofit2:retrofit:${retrofit_version}"
-    api "com.squareup.okhttp3:logging-interceptor:${ok_http_version}"
-    api "com.squareup.retrofit2:converter-gson:${retrofit_version}"
-    api "com.squareup.retrofit2:adapter-rxjava2:${retrofit_version}"
+    api "com.squareup.okhttp3:okhttp:$rootProject.ok_http_version"
+    api "com.squareup.retrofit2:retrofit:$rootProject.retrofit_version"
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.ok_http_version"
+    api "com.squareup.retrofit2:converter-gson:$rootProject.retrofit_version"
+    api "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofit_version"
 
     //圆形头像
     //Circle ImageView
-    api "de.hdodenhof:circleimageview:${circle_imageView_version}"
+    api "de.hdodenhof:circleimageview:$rootProject.circle_imageView_version"
 
     //Glide图片加载
     api 'com.github.bumptech.glide:glide:4.7.1'
@@ -79,7 +80,7 @@ dependencies {
     //Banner
     api 'com.youth.banner:banner:1.4.10'  //最新版本
 
-    //状态栏
+    //状态栏 显示沉浸式的
     api 'com.gyf.immersionbar:immersionbar:2.3.1'
 
     //时间获取

@@ -88,7 +88,7 @@ class NoSSLv3SocketFactory : SSLSocketFactory {
         }
     }
 
-    open inner class DelegateSSLSocket internal constructor(protected val delegate: SSLSocket) : SSLSocket() {
+    open inner class DelegateSSLSocket internal constructor(private val delegate: SSLSocket) : SSLSocket() {
 
         override fun getSupportedCipherSuites(): Array<String> {
             return delegate.supportedCipherSuites

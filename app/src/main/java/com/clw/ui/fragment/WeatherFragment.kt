@@ -254,7 +254,7 @@ class WeatherFragment: BaseMvpFragment<WeatherPresenter>(), WeatherView, SwipeRe
     /**
      * 存储省份的网络数据
      */
-    private fun savaProvince(provinces: MutableList<Provinces>){
+    private fun saveProvince(provinces: MutableList<Provinces>){
         dataList.clear()
         for(provice in provinces){
             val po = Province()
@@ -316,7 +316,7 @@ class WeatherFragment: BaseMvpFragment<WeatherPresenter>(), WeatherView, SwipeRe
 
 
     override fun onGetProvinces(result: MutableList<Provinces>) {
-        savaProvince(result)
+        saveProvince(result)
     }
 
     override fun onGetCities(result: MutableList<Cities>) {

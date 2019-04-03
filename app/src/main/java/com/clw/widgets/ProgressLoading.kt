@@ -7,7 +7,7 @@ import android.view.Gravity
 import android.widget.ImageView
 import com.clw.R
 import org.jetbrains.anko.find
-
+import java.util.*
 
 class ProgressLoading private constructor(context:Context,theme:Int):Dialog(context,theme){
     companion object {
@@ -33,10 +33,22 @@ class ProgressLoading private constructor(context:Context,theme:Int):Dialog(cont
 
     }
 
-    fun showLoading(){
+    fun showLoading(delayed:Int,isDisplay: Boolean){
         super.show()
         animDrawable?.start()
+
+        if(isDisplay){
+            val time = 1000 * delayed
+            val timer = Timer()
+            val timerTask = object : TimerTask() {
+                override fun run() {
+                    hideLoading()
+                }
+            }
+            timer.schedule(timerTask, time.toLong())
+        }
     }
+
 
     fun hideLoading(){
         super.dismiss()
