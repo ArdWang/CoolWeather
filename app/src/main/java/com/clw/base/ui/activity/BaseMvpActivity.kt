@@ -31,12 +31,13 @@ abstract class BaseMvpActivity<T:BasePresenter<*>>:BaseActivity(),BaseView {
 
     }
 
+    ////最长时间只能为20秒
     override fun showLoading() {
-
+        progressLoading.showLoading(20,true)
     }
 
     override fun hideLoading() {
-
+        progressLoading.hideLoading()
     }
 
     override fun onError(text: String) {
